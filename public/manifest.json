@@ -1,0 +1,48 @@
+{
+  "name": "WKS Plafond - Gypsum & PVC Specialist",
+  "short_name": "WKS Plafond",
+  "description": "Spesialis plafond gypsum dan PVC Jakarta. Jasa pemasangan plafond berkualitas tinggi dengan harga terjangkau.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "categories": ["business", "construction", "services"],
+  "lang": "id",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/placeholder.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/placeholder.svg",
+      "type": "image/svg+xml", 
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Gallery",
+      "short_name": "Gallery",
+      "description": "Lihat galeri hasil kerja plafond",
+      "url": "/#gallery",
+      "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Kontak",
+      "short_name": "Kontak", 
+      "description": "Hubungi kami via WhatsApp",
+      "url": "/#contact",
+      "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
+    }
+  ]
+}

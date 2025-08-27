@@ -1,0 +1,61 @@
+import React, { useState, useEffect } from 'react';
+import { MessageCircle, ArrowUp } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+
+const FloatingButtons = () => {
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '6282321926681';
+    const message = 'Halo WKS, saya tertarik dengan layanan plafond gypsum dan PVC. Mohon informasi lebih lanjut.';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
+  return (
+    <>
+      {/* Live Chat Button - Left Side */}
+      <div className="fixed left-6 bottom-6 z-50">
+        <Button
+          onClick={handleWhatsAppClick}
+          className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl hover:scale-110 transition-all duration-300 animate-pulse"
+        >
+          <MessageCircle className="h-8 w-8" />
+        </Button>
+        <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black/80 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          Live Chat
+        </div>
+      </div>
+
+      {/* Scroll to Top Button - Right Side */}
+      {showScrollTop && (
+        <div className="fixed right-6 bottom-6 z-50">
+          <Button
+            onClick={scrollToTop}
+            className="w-14 h-14 rounded-full gradient-primary text-white shadow-2xl hover:scale-110 transition-all duration-300 group"
+          >
+            <ArrowUp className="h-6 w-6 group-hover:animate-bounce" />
+          </Button>
+        </div>
+      )}
+    </>
+  );
+};
+
+export default FloatingButtons;

@@ -1,0 +1,122 @@
+import React from 'react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
+import logoWks from '@/assets/logo-wks.png';
+
+const Footer = () => {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = '6282321926681';
+    const message = 'Halo WKS, saya tertarik dengan layanan plafond gypsum dan PVC.';
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <footer className="gradient-hero text-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center mb-6">
+              <img src={logoWks} alt="WKS Logo" className="h-12 w-auto mr-4" />
+              <div>
+                <h3 className="text-2xl font-bold">WKS Plafond</h3>
+                <p className="text-white/80">Gypsum & PVC Specialist</p>
+              </div>
+            </div>
+            <p className="text-white/80 mb-6 leading-relaxed max-w-md">
+              Spesialis pemasangan plafond gypsum dan PVC dengan pengalaman lebih dari 5 tahun. 
+              Melayani area Jakarta, Bogor, Depok, Tangerang, dan Bekasi dengan kualitas terbaik.
+            </p>
+            
+            {/* Contact Info */}
+            <div className="space-y-3">
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-white/60" />
+                <span onClick={handleWhatsAppClick} className="text-white/80 hover:text-white cursor-pointer">
+                  +62 823-2192-6681
+                </span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-white/60" />
+                <span className="text-white/80">info@wks-plafond.com</span>
+              </div>
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-white/60" />
+                <span className="text-white/80">Jakarta, Indonesia</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-xl font-bold mb-6">Menu Cepat</h4>
+            <ul className="space-y-3">
+              {[
+                { label: 'Home', href: 'home' },
+                { label: 'Gallery', href: 'gallery' },
+                { label: 'Project', href: 'project' },
+                { label: 'Testimoni', href: 'testimonial' },
+                { label: 'Kontak', href: 'contact' }
+              ].map((link) => (
+                <li key={link.label}>
+                  <button
+                    onClick={() => scrollToSection(link.href)}
+                    className="text-white/80 hover:text-white transition-colors duration-300"
+                  >
+                    {link.label}
+                  </button>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h4 className="text-xl font-bold mb-6">Layanan Kami</h4>
+            <ul className="space-y-3 text-white/80">
+              <li>Plafond Gypsum</li>
+              <li>Plafond PVC</li>
+              <li>Partisi Gypsum</li>
+              <li>Cat Plafond</li>
+              <li>Konsultasi Gratis</li>
+              <li>Maintenance</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Social Media & Bottom */}
+        <div className="border-t border-white/20 pt-8 mt-12">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="mb-4 md:mb-0">
+              <p className="text-white/60 text-sm">
+                © {new Date().getFullYear()} WKS Plafond. All rights reserved.
+              </p>
+            </div>
+            
+            {/* Social Media */}
+            <div className="flex space-x-4">
+              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+                <Youtube className="h-6 w-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

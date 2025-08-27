@@ -1,14 +1,17 @@
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: Twitterbot
-Allow: /
-
-User-agent: facebookexternalhit
-Allow: /
-
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://your-domain.com/sitemap.xml
+
+# Specific crawl rules
+Allow: /gallery
+Allow: /project
+Allow: /contact
+
+# SEO optimized for plafond gypsum PVC keywords
+# plafond gypsum jakarta
+# plafond pvc jakarta
+# jasa plafond gypsum
+# harga plafond pvc
+# kontraktor plafond jakarta
