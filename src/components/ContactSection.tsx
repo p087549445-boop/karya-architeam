@@ -11,7 +11,7 @@ const ContactSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6269730266';
+    const phoneNumber = '628977230266';
     const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi. Mohon informasi lebih lanjut.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -60,7 +60,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">WhatsApp</h4>
-                    <p className="text-white/80">069 730 266</p>
+                    <p className="text-white/80">+628977230266</p>
                   </div>
                 </div>
 

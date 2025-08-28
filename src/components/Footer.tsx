@@ -4,7 +4,7 @@ import logoKarya from '@/assets/logo-karya.png';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6269730266';
+    const phoneNumber = '628977230266';
     const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -40,7 +40,7 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-white/60" />
                 <span onClick={handleWhatsAppClick} className="text-white/80 hover:text-white cursor-pointer">
-                  069 730 266
+                  +628977230266
                 </span>
               </div>
               <div className="flex items-center space-x-3">

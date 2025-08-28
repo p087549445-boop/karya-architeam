@@ -105,15 +105,6 @@ const Gallery = () => {
       {selectedImage && (
         <div className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4">
           <div className="relative max-w-5xl max-h-full">
-            {/* Back Button */}
-            <Button
-              variant="outline"
-              size="icon"
-              onClick={closePreview}
-              className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm border-white/30 text-white hover:bg-white/30 z-10"
-            >
-              <ArrowLeft className="h-6 w-6" />
-            </Button>
 
             {/* Close Button */}
             <Button

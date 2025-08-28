@@ -15,7 +15,7 @@ const FloatingButtons = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6269730266';
+    const phoneNumber = '628977230266';
     const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi. Mohon informasi lebih lanjut.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');

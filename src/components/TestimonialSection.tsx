@@ -10,7 +10,7 @@ const TestimonialSection = () => {
       role: 'Pemilik Rumah',
       location: 'Jakarta Selatan',
       rating: 5,
-      text: 'Pelayanan WKS sangat memuaskan! Plafond gypsum yang dipasang di rumah saya sangat rapi dan berkualitas. Tim kerja profesional dan tepat waktu.',
+      text: 'Pelayanan KARYA ARCHITEAM sangat memuaskan! Desain arsitektur dan konstruksi yang dipasang di rumah saya sangat rapi dan berkualitas. Tim kerja profesional dan tepat waktu.',
       image: '👨‍💼'
     },
     {
@@ -18,7 +18,7 @@ const TestimonialSection = () => {
       role: 'Interior Designer',
       location: 'Bekasi',
       rating: 5,
-      text: 'Sudah beberapa kali bekerja sama dengan WKS untuk project klien. Hasil selalu memuaskan dan sesuai dengan desain yang diinginkan. Highly recommended!',
+      text: 'Sudah beberapa kali bekerja sama dengan KARYA ARCHITEAM untuk project klien. Hasil selalu memuaskan dan sesuai dengan desain yang diinginkan. Highly recommended!',
       image: '👩‍💻'
     },
     {
@@ -26,7 +26,7 @@ const TestimonialSection = () => {
       role: 'Pengusaha',
       location: 'Tangerang',
       rating: 5,
-      text: 'Pemasangan plafond PVC di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan garansi yang jelas. Terima kasih WKS!',
+      text: 'Konstruksi dan renovasi di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan garansi yang jelas. Terima kasih KARYA ARCHITEAM!',
       image: '👨‍💼'
     },
     {
@@ -34,7 +34,7 @@ const TestimonialSection = () => {
       role: 'Arsitek',
       location: 'Depok',
       rating: 5,
-      text: 'WKS adalah partner terpercaya untuk project plafond. Kualitas material bagus, pengerjaan rapi, dan komunikasi yang baik selama project berlangsung.',
+      text: 'KARYA ARCHITEAM adalah partner terpercaya untuk project konstruksi. Kualitas material bagus, pengerjaan rapi, dan komunikasi yang baik selama project berlangsung.',
       image: '👩‍🏗️'
     }
   ];
