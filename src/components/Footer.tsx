@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">Jl. Raya Sukamulya, RT.002/01, Ds. Sukamulya, Kec. Jambe, Kab. Tangerang, Banten 15720</span>
+                <span className="text-white/80">MG67+42H, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten</span>
               </div>
             </div>
           </div>

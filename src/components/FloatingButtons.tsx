@@ -30,19 +30,6 @@ const FloatingButtons = () => {
 
   return (
     <>
-      {/* Live Chat Button - Left Side */}
-      <div className="fixed left-6 bottom-6 z-50">
-        <Button
-          onClick={handleWhatsAppClick}
-          className="w-16 h-16 rounded-full bg-green-500 hover:bg-green-600 text-white shadow-2xl hover:scale-110 transition-all duration-300 animate-pulse"
-        >
-          <MessageCircle className="h-8 w-8" />
-        </Button>
-        <div className="absolute -top-12 left-1/2 transform -translate-x-1/2 bg-black/80 text-white px-3 py-1 rounded-lg text-sm whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-          Live Chat
-        </div>
-      </div>
-
       {/* Scroll to Top Button - Right Side */}
       {showScrollTop && (
         <div className="fixed right-6 bottom-6 z-50">

@@ -4,9 +4,9 @@ import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
   const handleMapClick = () => {
-    // Open Google Maps or similar mapping app
-    const coordinates = '-6.200000,106.816666'; // Jakarta coordinates (replace with actual)
-    const mapUrl = `https://www.google.com/maps?q=${coordinates}`;
+    // Open Google Maps with the actual location
+    const location = 'MG67+42H, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten';
+    const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(location)}`;
     window.open(mapUrl, '_blank');
   };
 
@@ -47,9 +47,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Alamat</h4>
                     <p className="text-white/80">
-                      Jl. Raya Sukamulya, RT.002/01<br />
-                      Ds. Sukamulya, Kec. Jambe<br />
-                      Kab. Tangerang, Banten 15720
+                      MG67+42H, Suka Manah<br />
+                      Kec. Jambe, Kabupaten Tangerang<br />
+                      Banten
                     </p>
                   </div>
                 </div>
