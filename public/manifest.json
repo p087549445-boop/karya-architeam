@@ -5,7 +5,7 @@
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3b82f6",
+  "theme_color": "#f4a300",
   "orientation": "portrait-primary",
   "categories": ["business", "architecture", "construction", "services"],
   "lang": "id",
