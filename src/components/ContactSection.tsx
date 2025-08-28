@@ -11,8 +11,8 @@ const ContactSection = () => {
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6282321926681';
-    const message = 'Halo WKS, saya tertarik dengan layanan plafond gypsum dan PVC. Mohon informasi lebih lanjut.';
+    const phoneNumber = '6269730266';
+    const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi. Mohon informasi lebih lanjut.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -26,7 +26,7 @@ const ContactSection = () => {
             Hubungi Kami
           </h2>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Siap melayani konsultasi dan pemasangan plafond gypsum & PVC untuk project Anda. 
+            Siap melayani konsultasi dan layanan arsitektur & konstruksi untuk project Anda. 
             Hubungi kami sekarang untuk mendapatkan penawaran terbaik!
           </p>
         </div>
@@ -47,8 +47,9 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Alamat</h4>
                     <p className="text-white/80">
-                      Jakarta, Indonesia<br />
-                      (Lokasi akan disesuaikan dengan project)
+                      Jl. Raya Sukamulya, RT.002/01<br />
+                      Ds. Sukamulya, Kec. Jambe<br />
+                      Kab. Tangerang, Banten 15720
                     </p>
                   </div>
                 </div>
@@ -59,7 +60,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">WhatsApp</h4>
-                    <p className="text-white/80">+62 823-2192-6681</p>
+                    <p className="text-white/80">069 730 266</p>
                   </div>
                 </div>
 
@@ -69,7 +70,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-white/80">info@wks-plafond.com</p>
+                    <p className="text-white/80">karya.architeam@gmail.com</p>
                   </div>
                 </div>
 
@@ -117,7 +118,7 @@ const ContactSection = () => {
                     Klik untuk Buka Maps
                   </h4>
                   <p className="text-sm opacity-80">
-                    Melayani area Jakarta, Bogor, Depok, Tangerang, Bekasi
+                    Melayani area Tangerang, Banten dan sekitarnya
                   </p>
                 </div>
               </div>
@@ -130,7 +131,7 @@ const ContactSection = () => {
             <div className="mt-6">
               <h4 className="text-white font-semibold mb-3">Area Layanan:</h4>
               <div className="grid grid-cols-2 gap-2 text-sm">
-                {['Jakarta', 'Bogor', 'Depok', 'Tangerang', 'Bekasi', 'Karawang'].map((area) => (
+                {['Tangerang', 'Serpong', 'Pamulang', 'Ciputat', 'Bintaro', 'Karawaci'].map((area) => (
                   <div key={area} className="bg-white/10 rounded-lg px-3 py-2 text-white/80">
                     📍 {area}
                   </div>

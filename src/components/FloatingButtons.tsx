@@ -15,8 +15,8 @@ const FloatingButtons = () => {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6282321926681';
-    const message = 'Halo WKS, saya tertarik dengan layanan plafond gypsum dan PVC. Mohon informasi lebih lanjut.';
+    const phoneNumber = '6269730266';
+    const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi. Mohon informasi lebih lanjut.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };

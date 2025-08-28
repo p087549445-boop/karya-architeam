@@ -1,11 +1,11 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
-import logoWks from '@/assets/logo-wks.png';
+import logoKarya from '@/assets/logo-karya.png';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '6282321926681';
-    const message = 'Halo WKS, saya tertarik dengan layanan plafond gypsum dan PVC.';
+    const phoneNumber = '6269730266';
+    const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
@@ -24,15 +24,15 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center mb-6">
-              <img src={logoWks} alt="WKS Logo" className="h-12 w-auto mr-4" />
+              <img src={logoKarya} alt="KARYA ARCHITEAM Logo" className="h-12 w-auto mr-4" />
               <div>
-                <h3 className="text-2xl font-bold">WKS Plafond</h3>
-                <p className="text-white/80">Gypsum & PVC Specialist</p>
+                <h3 className="text-2xl font-bold">KARYA ARCHITEAM</h3>
+                <p className="text-white/80">Architecture & Construction</p>
               </div>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
-              Spesialis pemasangan plafond gypsum dan PVC dengan pengalaman lebih dari 5 tahun. 
-              Melayani area Jakarta, Bogor, Depok, Tangerang, dan Bekasi dengan kualitas terbaik.
+              Spesialis arsitektur dan konstruksi dengan pengalaman profesional. 
+              Melayani area Tangerang dan sekitarnya dengan kualitas terbaik dan desain inovatif.
             </p>
             
             {/* Contact Info */}
@@ -40,16 +40,16 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-white/60" />
                 <span onClick={handleWhatsAppClick} className="text-white/80 hover:text-white cursor-pointer">
-                  +62 823-2192-6681
+                  069 730 266
                 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">info@wks-plafond.com</span>
+                <span className="text-white/80">karya.architeam@gmail.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">Jakarta, Indonesia</span>
+                <span className="text-white/80">Jl. Raya Sukamulya, RT.002/01, Ds. Sukamulya, Kec. Jambe, Kab. Tangerang, Banten 15720</span>
               </div>
             </div>
           </div>
@@ -81,12 +81,12 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6">Layanan Kami</h4>
             <ul className="space-y-3 text-white/80">
-              <li>Plafond Gypsum</li>
-              <li>Plafond PVC</li>
-              <li>Partisi Gypsum</li>
-              <li>Cat Plafond</li>
+              <li>Desain Arsitektur</li>
+              <li>Konstruksi Bangunan</li>
+              <li>Renovasi</li>
+              <li>Interior Design</li>
               <li>Konsultasi Gratis</li>
-              <li>Maintenance</li>
+              <li>Project Management</li>
             </ul>
           </div>
         </div>
@@ -96,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-white/60 text-sm">
-                © {new Date().getFullYear()} WKS Plafond. All rights reserved.
+                © {new Date().getFullYear()} KARYA ARCHITEAM. All rights reserved.
               </p>
             </div>
             

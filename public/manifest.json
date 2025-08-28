@@ -1,13 +1,13 @@
 {
-  "name": "WKS Plafond - Gypsum & PVC Specialist",
-  "short_name": "WKS Plafond",
-  "description": "Spesialis plafond gypsum dan PVC Jakarta. Jasa pemasangan plafond berkualitas tinggi dengan harga terjangkau.",
+  "name": "KARYA ARCHITEAM - Architecture & Construction",
+  "short_name": "KARYA ARCHITEAM",
+  "description": "Spesialis arsitektur dan konstruksi Tangerang. Jasa desain arsitektur dan konstruksi berkualitas tinggi.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#3b82f6",
   "orientation": "portrait-primary",
-  "categories": ["business", "construction", "services"],
+  "categories": ["business", "architecture", "construction", "services"],
   "lang": "id",
   "scope": "/",
   "icons": [
@@ -33,14 +33,14 @@
     {
       "name": "Gallery",
       "short_name": "Gallery",
-      "description": "Lihat galeri hasil kerja plafond",
+      "description": "Lihat galeri hasil kerja arsitektur",
       "url": "/#gallery",
       "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
     },
     {
       "name": "Kontak",
       "short_name": "Kontak", 
-      "description": "Hubungi kami via WhatsApp",
+      "description": "Hubungi KARYA ARCHITEAM via WhatsApp",
       "url": "/#contact",
       "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
     }

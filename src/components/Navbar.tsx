@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import logoWks from '@/assets/logo-wks.png';
+import logoKarya from '@/assets/logo-karya.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +40,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <img 
-              src={logoWks} 
-              alt="WKS Logo" 
+              src={logoKarya} 
+              alt="KARYA ARCHITEAM Logo" 
               className="h-10 w-auto object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => scrollToSection('home')}
             />
