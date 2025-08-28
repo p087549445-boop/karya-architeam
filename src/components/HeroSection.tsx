@@ -21,12 +21,12 @@ const HeroSection = () => {
           {/* Header Text */}
           <div className="mb-12">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="block">PLAFOND</span>
-              <span className="block text-gradient">GYPSUM</span>
+              <span className="block">KARYA</span>
+              <span className="block">ARCHITEAM</span>
             </h1>
             <h2 className="text-3xl md:text-5xl font-semibold mb-8">
-              <span className="block">PLAFOND</span>
-              <span className="block text-gradient">PVC</span>
+              <span className="block text-gradient">PLAFOND</span>
+              <span className="block text-gradient">GYPSUM & PVC</span>
             </h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
               Solusi terbaik untuk langit-langit rumah dan kantor Anda. 
