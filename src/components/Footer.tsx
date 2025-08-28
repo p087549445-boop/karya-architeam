@@ -4,7 +4,7 @@ import logoKarya from '@/assets/logo-karya.png';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = '628977230266';
+    const phoneNumber = '+628977230266';
     const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -49,7 +49,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-white/60" />
-                <span className="text-white/80">MG67+42H, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten</span>
+                <span className="text-white/80">Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten</span>
               </div>
             </div>
           </div>
