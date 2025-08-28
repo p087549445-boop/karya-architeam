@@ -5,13 +5,13 @@ import { Button } from '@/components/ui/button';
 const ContactSection = () => {
   const handleMapClick = () => {
     // Open Google Maps with the actual location
-    const location = 'MG67+42H, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten';
+    const location = 'Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten';
     const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(location)}`;
     window.open(mapUrl, '_blank');
   };
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = '628977230266';
+    const phoneNumber = '+628977230266';
     const message = 'Halo KARYA ARCHITEAM, saya tertarik dengan layanan arsitektur dan konstruksi. Mohon informasi lebih lanjut.';
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
@@ -47,7 +47,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Alamat</h4>
                     <p className="text-white/80">
-                      MG67+42H, Suka Manah<br />
+                      Suka Manah<br />
                       Kec. Jambe, Kabupaten Tangerang<br />
                       Banten
                     </p>
