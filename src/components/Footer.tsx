@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
-import logoKarya from '@/assets/logo-karya.png';
+import logoKarya from '@/assets/logo-karya-footer.png';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
