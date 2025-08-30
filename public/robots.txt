@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-# SITE MAP
+# SITEMAP
 # Sitemap
 Sitemap: https://karya-achiteam.my.id/sitemap.xml
 
