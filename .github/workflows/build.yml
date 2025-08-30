@@ -1,12 +1,12 @@
-name: Build dist
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - main # jalankan tiap push ke main
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -28,9 +28,19 @@ jobs:
       - name: Build project
         run: npm run build
 
-      # 5. Upload dist folder sebagai artifact
+      # 5. Upload dist artifact (opsional)
       - name: Upload dist artifact
         uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
+
+      # 6. Deploy dist via FTP ke Hostinger
+      - name: Deploy dist via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist
+          server-dir: /public_html/
