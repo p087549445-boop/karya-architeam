@@ -1,7 +1,10 @@
 name: Deploy to Hostinger
 
 on:
-  workflow_dispatch:  # Bisa dijalankan manual via GitHub Actions
+  push:
+    branches:
+      - main
+
 
 jobs:
   deploy:
