@@ -8,6 +8,12 @@ export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
     port: 8080,
+    allowedHosts: [
+      "s8g7ln-8081.csb.app", // host sandbox kamu
+      /\.csb\.app$/, // semua subdomain CodeSandbox
+      "localhost",
+      "127.0.0.1",
+    ],
   },
   plugins: [react(), mode === "development" && componentTagger()].filter(
     Boolean
