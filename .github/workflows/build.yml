@@ -1,12 +1,12 @@
-name: Build and Deploy
+name: Build dist
 
 on:
   push:
     branches:
-      - main
+      - main # jalankan tiap push ke main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,39 +14,23 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 2. Setup Git (hilangkan warning git config)
-      - name: Setup Git
-        run: |
-          git config --global user.name "GitHub Actions"
-          git config --global user.email "actions@github.com"
-
-      # 3. Setup Node.js
+      # 2. Setup Node.js
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      # 4. Install dependencies
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 5. Build project
+      # 4. Build project
       - name: Build project
         run: npm run build
 
-      # 6. Upload dist artifact (opsional)
+      # 5. Upload dist folder sebagai artifact
       - name: Upload dist artifact
         uses: actions/upload-artifact@v4
         with:
           name: dist
           path: dist
-
-      # 7. Deploy dist via FTP ke Hostinger
-      - name: Deploy dist via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: dist/
-          server-dir: /public_html/
