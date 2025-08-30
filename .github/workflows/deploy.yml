@@ -1,0 +1,38 @@
+name: Deploy to Hostinger
+
+on:
+  workflow_dispatch:  # Bisa dijalankan manual via GitHub Actions
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Setup Node.js (agar bisa build dist juga jika perlu)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 3. Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Build project (opsional, bisa skip jika sudah build artifact)
+      - name: Build project
+        run: npm run build
+
+      # 5. Deploy dist via FTP tanpa hapus file lama
+      - name: Deploy dist via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist/       # Slash wajib
+          server-dir: /public_html/
+          git-ftp-args: --disable-ansi --no-prompt
