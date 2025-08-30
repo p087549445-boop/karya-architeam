@@ -3,7 +3,7 @@ Allow: /
 
 # Sitemap
 Sitemap: https://karya-achiteam.my.id/sitemap.xml
-
+# ---- 
 # Specific crawl rules
 Allow: /gallery
 Allow: /project
