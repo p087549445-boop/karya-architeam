@@ -70,7 +70,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="text-white font-semibold mb-1">Email</h4>
-                    <p className="text-white/80">karya.architeam@gmail.com</p>
+                    <p className="text-white/80">awan@karya-architeam.my.id</p>
                   </div>
                 </div>
 
