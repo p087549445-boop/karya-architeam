@@ -1,6 +1,6 @@
 {
   "name": "KARYA ARCHITEAM - Architecture & Construction",
-  "short_name": "KARYA ARCHITEAM",
+  "short_name": "ARCHITEAM",
   "description": "Spesialis arsitektur dan konstruksi Tangerang. Jasa desain arsitektur dan konstruksi berkualitas tinggi.",
   "start_url": "/",
   "display": "standalone",
@@ -17,13 +17,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/placeholder.svg",
+      "src": "/logo-karya-navbar.png",
       "type": "image/svg+xml",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/placeholder.svg",
+      "src": "/logo-karya-navbar.png",
       "type": "image/svg+xml", 
       "sizes": "512x512",
       "purpose": "any maskable"
@@ -35,14 +35,14 @@
       "short_name": "Gallery",
       "description": "Lihat galeri hasil kerja arsitektur",
       "url": "/#gallery",
-      "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
+      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
     },
     {
       "name": "Kontak",
       "short_name": "Kontak", 
       "description": "Hubungi KARYA ARCHITEAM via WhatsApp",
       "url": "/#contact",
-      "icons": [{ "src": "/placeholder.svg", "sizes": "192x192" }]
+      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
     }
   ]
 }
