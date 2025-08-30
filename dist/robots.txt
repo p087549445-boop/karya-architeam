@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://karya-achiteam.my.id/sitemap.xml
+
+# Specific crawl rules
+Allow: /gallery
+Allow: /project
+Allow: /contact
+
+# SEO optimized for plafond gypsum PVC keywords
+# plafond gypsum jakarta
+# plafond pvc jakarta
+# jasa plafond gypsum
+# harga plafond pvc
+# kontraktor plafond jakarta
