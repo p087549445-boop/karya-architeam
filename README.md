@@ -1,4 +1,4 @@
-# project for Lovable Karya Architeam
+# project Karya Architeam
 
 ## Project info
 
