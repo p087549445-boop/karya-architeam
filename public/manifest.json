@@ -17,13 +17,13 @@
       "type": "image/x-icon"
     },
     {
-      "src": "/logo-karya-navbar.png",
+      "src": "../src/assets/logo-karya-navbar.png",
       "type": "image/svg+xml",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo-karya-navbar.png",
+      "src": "../src/assets/logo-karya-navbar.png",
       "type": "image/svg+xml", 
       "sizes": "512x512",
       "purpose": "any maskable"
@@ -35,14 +35,14 @@
       "short_name": "Gallery",
       "description": "Lihat galeri hasil kerja arsitektur",
       "url": "/#gallery",
-      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
+      "icons": [{ "src": "../src/assets/logo-karya-navbar.png", "sizes": "192x192" }]
     },
     {
       "name": "Kontak",
       "short_name": "Kontak", 
       "description": "Hubungi KARYA ARCHITEAM via WhatsApp",
       "url": "/#contact",
-      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
+      "icons": [{ "src": "../src/assets/logo-karya-navbar.png", "sizes": "192x192" }]
     }
   ]
 }
