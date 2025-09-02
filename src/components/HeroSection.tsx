@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="animate-marquee text-white font-semibold text-lg">
           🔥 PROMO SPESIAL: Dapatkan diskon 20% untuk pemasangan plafond gypsum & PVC! Hubungi kami sekarang juga! 🔥 
           ✨ Kualitas terbaik, harga terjangkau, garansi resmi ✨ 
-          📞 WhatsApp: +6282321926681 📞
+          📞 WhatsApp: +628977230266 📞
         </div>
       </div>
 
