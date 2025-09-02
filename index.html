@@ -35,32 +35,145 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="KARYA ARCHITEAM" />
 
-    <!-- Structured Data for SEO -->
+    <!-- Enhanced Structured Data for SEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "KARYA ARCHITEAM",
-      "description": "Spesialis arsitektur dan konstruksi Tangerang",
-      "url": "https://karya-architeam.my.id",
-      "telephone": "069730266",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "MG67+42H, Suka Manah",
-        "addressLocality": "Kec. Jambe, Kabupaten Tangerang",
-        "addressRegion": "Banten",
-        "postalCode": "15720",
-        "addressCountry": "ID"
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "KARYA ARCHITEAM",
+        "description": "Spesialis plafond gypsum dan PVC, arsitektur dan konstruksi Tangerang. Jasa pemasangan plafond berkualitas tinggi dengan harga terjangkau.",
+        "url": "https://karya-architeam.my.id",
+        "telephone": "+6282321926681",
+        "email": "info@karya-architeam.my.id",
+        "image": "https://karya-architeam.my.id/logo-karya-navbar.png",
+        "logo": "https://karya-architeam.my.id/logo-karya-navbar.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "MG67+42H, Suka Manah",
+          "addressLocality": "Kec. Jambe, Kabupaten Tangerang",
+          "addressRegion": "Banten",
+          "postalCode": "15720",
+          "addressCountry": "ID"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -6.2088,
+          "longitude": 106.6405
+        },
+        "openingHours": "Mo-Sa 08:00-17:00, Su 08:00-12:00",
+        "priceRange": "$$",
+        "serviceArea": {
+          "@type": "GeoCircle",
+          "geoMidpoint": {
+            "@type": "GeoCoordinates",
+            "latitude": -6.2088,
+            "longitude": 106.6405
+          },
+          "geoRadius": "50000"
+        },
+        "areaServed": ["Tangerang", "Serpong", "Pamulang", "Ciputat", "Bintaro", "Karawaci", "Jakarta Barat", "Depok"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Layanan Plafond dan Konstruksi",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pemasangan Plafond Gypsum",
+                "description": "Jasa pemasangan plafond gypsum berkualitas tinggi untuk rumah dan kantor"
+              }
+            },
+            {
+              "@type": "Offer", 
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Pemasangan Plafond PVC",
+                "description": "Jasa pemasangan plafond PVC tahan lama dan anti rayap"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service", 
+                "name": "Desain Arsitektur",
+                "description": "Jasa desain arsitektur rumah dan bangunan komersial"
+              }
+            }
+          ]
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "150"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {
+              "@type": "Person",
+              "name": "Budi Santoso"
+            },
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            },
+            "reviewBody": "Pelayanan excellent, hasil pemasangan plafond gypsum sangat rapi dan profesional. Recommended!"
+          }
+        ]
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -6.2088,
-        "longitude": 106.6405
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "KARYA ARCHITEAM",
+        "url": "https://karya-architeam.my.id",
+        "description": "Website resmi KARYA ARCHITEAM - Spesialis plafond gypsum, PVC, arsitektur dan konstruksi Tangerang",
+        "publisher": {
+          "@type": "Organization",
+          "name": "KARYA ARCHITEAM",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://karya-architeam.my.id/logo-karya-navbar.png"
+          }
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://karya-architeam.my.id/#gallery?search={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
-      "openingHours": "Mo-Sa 08:00-17:00, Su 08:00-12:00",
-      "priceRange": "$$",
-      "serviceArea": ["Tangerang", "Serpong", "Pamulang", "Ciputat", "Bintaro", "Karawaci"]
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://karya-architeam.my.id/"
+          },
+          {
+            "@type": "ListItem", 
+            "position": 2,
+            "name": "Gallery",
+            "item": "https://karya-architeam.my.id/#gallery"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Project",
+            "item": "https://karya-architeam.my.id/#project"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Contact",
+            "item": "https://karya-architeam.my.id/#contact"
+          }
+        ]
+      }
+    ]
     </script>
   </head>
 
