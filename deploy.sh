@@ -2,28 +2,42 @@
 
 set -e
 
-echo "🔨 Building project..."
+BUILD_DIR="dist"
+DEPLOY_BRANCH="deploy"
+DEPLOY_DIR="../deploy-worktree" # worktree untuk branch deploy
+
+echo "🔨 Build project di branch main..."
 npm run build
 
-echo "📂 Checkout ke branch deploy..."
-git checkout deploy
+echo "📂 Siapkan worktree untuk $DEPLOY_BRANCH..."
+# Hapus worktree lama kalau ada
+if [ -d "$DEPLOY_DIR" ]; then
+  echo "⚠️ Worktree lama ditemukan, hapus..."
+  git worktree remove --force $DEPLOY_DIR || rm -rf $DEPLOY_DIR
+fi
 
-echo "🧹 Hapus file lama (kecuali .git)..."
+# Tambah worktree baru
+git worktree add $DEPLOY_DIR $DEPLOY_BRANCH
+
+echo "🧹 Hapus file lama di worktree (kecuali .git)..."
+cd $DEPLOY_DIR
 find . -mindepth 1 -not -name '.git' -exec rm -rf {} +
+cd -
 
-echo "📂 Copy hasil build..."
-cp -r dist/* .
+echo "📂 Copy hasil build ke worktree..."
+cp -r $BUILD_DIR/* $DEPLOY_DIR
 
-echo "➕ Git add..."
+echo "➕ Git add & commit..."
+cd $DEPLOY_DIR
 git add .
-
-echo "✅ Commit..."
 git commit -m "Deploy build $(date +'%Y-%m-%d %H:%M:%S')" || echo "⚠️ Tidak ada perubahan untuk di-commit"
 
-echo "⬆️ Push ke remote..."
-git push origin deploy
+echo "⬆️ Push ke remote $DEPLOY_BRANCH..."
+git push origin $DEPLOY_BRANCH
 
-echo "↩️ Balik lagi ke branch main..."
-git checkout main
+cd -
 
-echo "🚀 Selesai! Website kamu sudah ter-deploy di Hostinger."
+echo "🗑️ Bersihkan dist dari branch main..."
+rm -rf $BUILD_DIR
+
+echo "🚀 Selesai! Kamu tetap di branch main, folder dist sudah dihapus, dan website sudah ter-deploy."
