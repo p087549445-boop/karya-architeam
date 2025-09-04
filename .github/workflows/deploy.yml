@@ -1,4 +1,3 @@
-
 name: Deploy
 
 on:
@@ -14,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 # penting biar worktree bisa jalan
+          fetch-depth: 0 # penting biar bisa checkout branch deploy
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -24,14 +23,25 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Jalankan deploy.sh
-        run: |
-          chmod +x deploy.sh
-          ./deploy.sh
+      - name: Build project
+        run: npm run build
 
-      - name: Push hasil build ke branch deploy
+      - name: Deploy ke branch deploy
         run: |
-          cd ../deploy-worktree
           git config user.name "github-actions"
           git config user.email "actions@github.com"
+
+          # Checkout branch deploy ke folder terpisah
+          git worktree add ../deploy-worktree deploy
+
+          # Hapus isi lama
+          rm -rf ../deploy-worktree/*
+
+          # Copy hasil build
+          cp -r dist/* ../deploy-worktree/
+
+          cd ../deploy-worktree
+          git add .
+          git commit -m "Deploy build $(date +'%Y-%m-%d %H:%M:%S')" || echo "⚠️ Tidak ada perubahan"
+          git push origin deploy
           git push origin deploy
