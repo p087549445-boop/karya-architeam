@@ -12,7 +12,7 @@ echo "🧹 Hapus file lama (kecuali .git)..."
 find . -mindepth 1 -not -name '.git' -exec rm -rf {} +
 
 echo "📂 Copy hasil build..."
-cp -r ../dist/* .
+cp -r dist/* .
 
 echo "➕ Git add..."
 git add .
