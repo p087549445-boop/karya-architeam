@@ -81,12 +81,12 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6">Layanan Kami</h4>
             <ul className="space-y-3 text-white/80">
-              <li>Desain Arsitektur</li>
-              <li>Konstruksi Bangunan</li>
-              <li>Renovasi</li>
-              <li>Interior Design</li>
+              <li>Pasang Plafon PVC</li>
+              <li>Pasang Plafon Gypsum</li>
+              <li>Molding Dinding</li>
+              <li>Partisi Gypsum</li>
               <li>Konsultasi Gratis</li>
-              <li>Project Management</li>
+              <li>Garansi & Maintenance</li>
             </ul>
           </div>
         </div>

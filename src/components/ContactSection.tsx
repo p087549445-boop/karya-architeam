@@ -81,8 +81,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Jam Operasional</h4>
                     <p className="text-white/80">
-                      Senin - Sabtu: 08:00 - 17:00<br />
-                      Minggu: 08:00 - 12:00
+                      Senin - Minggu: 24 Jam
                     </p>
                   </div>
                 </div>
