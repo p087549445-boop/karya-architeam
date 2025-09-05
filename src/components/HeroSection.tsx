@@ -24,7 +24,7 @@ const HeroSection = () => {
               <span className="block">KARYA</span>
               <span className="block">ARCHITEAM</span>
             </h1>
-            <h2 className="text-base md:text-4xl font-semibold mb-8">
+            <h2 className="text-xl md:text-6xl font-semibold mb-8">
               <span className="block text-gradient">PLAFOND</span>
               <span className="block text-gradient">GYPSUM & PVC</span>
             </h2>
