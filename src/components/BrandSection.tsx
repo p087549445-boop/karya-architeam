@@ -73,7 +73,7 @@ const BrandSection = () => {
         {/* Feature List */}
         <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
           <div className="text-center mb-10">
-            <h3 className="text-3xl font-bold text-gradient mb-4">
+            <h3 className="text-2xl font-bold text-gradient mb-4">
               Keunggulan Layanan Kami
             </h3>
           </div>
