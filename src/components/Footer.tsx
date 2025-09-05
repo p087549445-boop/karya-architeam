@@ -96,7 +96,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-white/60 text-sm">
-                © {new Date().getFullYear()} KARYA ARCHITEAM. All rights reserved.
+                © {new Date().getFullYear()} 2025 www.karya-architeam.my.id - Jasa Pasang Plafon Gypsum & PVC Tangerang.
               </p>
             </div>
             
