@@ -29,7 +29,7 @@ const HeroSection = () => {
               <span className="block text-gradient">GYPSUM & PVC</span>
             </h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-              Jasa Pasang Plafon Gypsum & PVC Tangerang,solusi terbaik untuk langit-langit rumah dan kantor Anda. 
+              Jasa Pasang Plafon Gypsum & PVC Tangerang <br /> solusi terbaik untuk langit-langit rumah dan kantor Anda. 
               Dengan kualitas premium dan desain modern yang elegan.
             </p>
           </div>
