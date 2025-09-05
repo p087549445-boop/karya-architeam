@@ -55,10 +55,10 @@ const ProjectSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
             Project & Statistik
           </h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-lg text-white/90 max-w-3xl mx-auto">
             Dengan pengalaman bertahun-tahun, kami telah menyelesaikan ratusan project 
             dengan kualitas terbaik dan kepuasan klien yang tinggi
           </p>
