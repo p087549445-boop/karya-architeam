@@ -40,9 +40,9 @@ const BrandSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-xl md:text-5xl font-bold text-gradient mb-4">
-            Mengapa Pilih KARYA ARCHITEAM?
+            Kenapa Pilih "KARYA ARCHITEAM"?
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Kami berkomitmen memberikan pelayanan terbaik dengan standar kualitas tinggi 
             untuk setiap project plafond gypsum dan PVC
           </p>
