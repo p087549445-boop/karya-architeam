@@ -5,8 +5,8 @@ const BrandSection = () => {
   const brands = [
     {
       icon: Shield,
-      title: 'Garansi Resmi',
-      description: 'Garansi 2 tahun untuk semua hasil pekerjaan'
+      title: 'Kualitas Terjamin',
+      description: 'Hasil pekerjaan berkualitas tinggi dan tahan lama'
     },
     {
       icon: Award,

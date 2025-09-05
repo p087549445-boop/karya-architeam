@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="gradient-primary overflow-hidden whitespace-nowrap py-3">
         <div className="animate-marquee text-white font-semibold text-lg">
           🔥 PROMO SPESIAL: Dapatkan diskon 20% untuk pemasangan plafond gypsum & PVC! Hubungi kami sekarang juga! 🔥 
-          ✨ Kualitas terbaik, harga terjangkau, garansi resmi ✨ 
+          ✨ Kualitas terbaik, harga terjangkau, pelayanan profesional ✨ 
           📞 WhatsApp: +628977230266 📞
         </div>
       </div>

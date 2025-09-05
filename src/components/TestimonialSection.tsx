@@ -26,7 +26,7 @@ const TestimonialSection = () => {
       role: 'Pengusaha',
       location: 'Tangerang',
       rating: 5,
-      text: 'Konstruksi dan renovasi di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan garansi yang jelas. Terima kasih KARYA ARCHITEAM!',
+      text: 'Konstruksi dan renovasi di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan pelayanan yang memuaskan. Terima kasih KARYA ARCHITEAM!',
       image: '👨‍💼'
     },
     {

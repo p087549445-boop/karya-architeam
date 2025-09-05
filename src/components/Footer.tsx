@@ -86,7 +86,7 @@ const Footer = () => {
               <li>Molding Dinding</li>
               <li>Partisi Gypsum</li>
               <li>Konsultasi Gratis</li>
-              <li>Garansi & Maintenance</li>
+              <li>Survey Lokasi</li>
             </ul>
           </div>
         </div>
