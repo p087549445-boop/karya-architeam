@@ -60,7 +60,7 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gradient mb-4">
+          <h2 className="text-xl md:text-5xl font-bold text-gradient mb-4">
             Gallery Karya Kami
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
