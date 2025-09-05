@@ -63,7 +63,7 @@ const Gallery = () => {
           <h2 className="text-xl md:text-5xl font-bold text-gradient mb-4">
             Gallery Karya Kami
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Lihat koleksi hasil pekerjaan plafond gypsum dan PVC berkualitas tinggi 
             yang telah kami kerjakan untuk berbagai klien
           </p>
