@@ -117,7 +117,7 @@ const ContactSection = () => {
                     Klik untuk Buka Maps
                   </h4>
                   <p className="text-sm opacity-80">
-                    Melayani area Tangerang, Banten dan sekitarnya
+                    Melayani area Kabupaten Tangerang, Banten dan sekitarnya
                   </p>
                 </div>
               </div>
