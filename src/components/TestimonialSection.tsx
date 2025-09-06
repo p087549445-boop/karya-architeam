@@ -63,7 +63,7 @@ const TestimonialSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-gradient mb-4">
-            Testimoni Klien
+            Reviews Klien
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             Kepuasan klien adalah prioritas utama kami. Berikut adalah testimoni 
