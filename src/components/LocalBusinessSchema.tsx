@@ -15,7 +15,7 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
     "email": "awan@karya-architeam.my.id",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Jl. Raya Sukamanah No.12 RT.002/001, Ds. Sukamanah",
+      "streetAddress": "Jl.raya sukamanah No.12, RT.002/RW.001 desa, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten 15720",
       "addressLocality": "Kec. Jambe, Kabupaten Tangerang",
       "addressRegion": "Banten",
       "postalCode": "15720",
