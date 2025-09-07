@@ -4,9 +4,8 @@ import { Button } from '@/components/ui/button';
 
 const ContactSection = () => {
   const handleMapClick = () => {
-    // Open Google Maps with the actual location
-    const location = 'MG67+42H, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten';
-    const mapUrl = `https://www.google.com/maps?q=${encodeURIComponent(location)}`;
+    // Open Google Maps with the specific shared link
+    const mapUrl = 'https://share.google/k5Rbj5KhuD30wWKgW';
     window.open(mapUrl, '_blank');
   };
 
