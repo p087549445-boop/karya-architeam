@@ -46,9 +46,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="text-white font-semibold mb-1">Alamat</h4>
                     <p className="text-white/80">
-                      Suka Manah<br />
-                      Kec. Jambe, Kabupaten Tangerang<br />
-                      Banten
+                      Jl.raya sukamanah No.12, RT.002/RW.001 desa, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten 15720
                     </p>
                   </div>
                 </div>
