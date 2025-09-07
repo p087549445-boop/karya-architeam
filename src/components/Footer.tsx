@@ -31,8 +31,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
-              Spesialis arsitektur dan konstruksi dengan pengalaman profesional. 
-              Melayani area Tangerang dan sekitarnya dengan kualitas terbaik dan desain inovatif.
+              ⭐ Spesialis Jasa Pasang Plafon Gypsum & PVC Tangerang Terpercaya sejak 2019. 
+              Melayani area Tangerang, Jakarta, dan sekitarnya dengan kualitas premium, 
+              harga bersaing, dan garansi 2 tahun. Konsultasi & Survey GRATIS!
             </p>
             
             {/* Contact Info */}
@@ -81,34 +82,39 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6">Layanan Kami</h4>
             <ul className="space-y-3 text-white/80">
-              <li>Pasang Plafon PVC</li>
-              <li>Pasang Plafon Gypsum</li>
-              <li>Molding Dinding</li>
+              <li>Jasa Pasang Plafon PVC</li>
+              <li>Jasa Pasang Plafon Gypsum</li>
+              <li>Pasang Molding Dinding</li>
+              <li>Renovasi Plafon Rumah</li>
               <li>Partisi Gypsum</li>
-              <li>Konsultasi Gratis</li>
-              <li>Survey Lokasi</li>
+              <li>Konsultasi & Survey Gratis</li>
             </ul>
           </div>
         </div>
 
         {/* Social Media & Bottom */}
         <div className="border-t border-white/20 pt-8 mt-12">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="mb-4 md:mb-0">
-              <p className="text-white/60 text-sm">
-                © {new Date().getFullYear()} Karya Architeam — All rights reserved.
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-4 text-sm">
+              <p className="text-white/60">
+                © {new Date().getFullYear()} KARYA ARCHITEAM — All rights reserved.
               </p>
+              <div className="flex items-center gap-4 text-white/60">
+                <span>Website Version: v2.1.0</span>
+                <span>|</span>
+                <span>Last Updated: {new Date().toLocaleDateString('id-ID')}</span>
+              </div>
             </div>
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+              <a href="https://www.facebook.com/karyaarchiteam" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="Facebook KARYA ARCHITEAM">
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+              <a href="https://www.instagram.com/karyaarchiteam" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="Instagram KARYA ARCHITEAM">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+              <a href="https://www.tiktok.com/@plafonpvctangerang" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="TikTok Plafon PVC Tangerang">
                 <Youtube className="h-6 w-6" />
               </a>
             </div>

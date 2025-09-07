@@ -7,25 +7,25 @@ const ProjectSection = () => {
       icon: CheckCircle,
       number: '500+',
       label: 'Project Selesai',
-      color: 'text-green-500'
+      color: 'text-primary'
     },
     {
       icon: Clock,
       number: '5+',
       label: 'Tahun Pengalaman',
-      color: 'text-blue-500'
+      color: 'text-secondary'
     },
     {
       icon: Users,
       number: '1000+',
       label: 'Klien Puas',
-      color: 'text-purple-500'
+      color: 'text-accent'
     },
     {
       icon: Star,
       number: '4.9',
       label: 'Rating Kepuasan',
-      color: 'text-yellow-500'
+      color: 'text-primary'
     }
   ];
 
@@ -56,11 +56,11 @@ const ProjectSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-white mb-4">
-            Project & Statistik
+            Portfolio Jasa Pasang Plafon Tangerang
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Dengan pengalaman bertahun-tahun, kami telah menyelesaikan ratusan project 
-            dengan kualitas terbaik dan kepuasan klien yang tinggi
+            Terpercaya sejak 2019 dengan 500+ project plafon gypsum dan PVC selesai di area Tangerang, Jakarta & sekitarnya. 
+            Kualitas terjamin, harga bersaing, garansi 2 tahun. Konsultasi gratis!
           </p>
         </div>
 

@@ -61,11 +61,12 @@ const Gallery = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-gradient mb-4">
-            Gallery Karya Kami
+            Gallery Hasil Pemasangan Plafon Gypsum & PVC
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Lihat koleksi hasil pekerjaan plafond gypsum dan PVC berkualitas tinggi 
-            yang telah kami kerjakan untuk berbagai klien
+            Portfolio terbaik jasa pasang plafon gypsum dan PVC di Tangerang. 
+            Lihat kualitas hasil pemasangan plafon rumah, kantor, dan ruko yang telah kami kerjakan 
+            dengan desain modern dan finishing premium.
           </p>
         </div>
 
@@ -80,8 +81,9 @@ const Gallery = () => {
               <div className="aspect-[4/3] overflow-hidden">
                 <img
                   src={image.src}
-                  alt={image.title}
+                  alt={`${image.title} - Jasa pasang ${image.category.toLowerCase()} berkualitas di Tangerang oleh KARYA ARCHITEAM`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
               

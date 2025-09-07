@@ -7,9 +7,9 @@ const HeroSection = () => {
       {/* Running Text Promo */}
       <div className="gradient-primary overflow-hidden whitespace-nowrap py-3">
         <div className="animate-marquee text-white font-semibold text-lg">
-          🔥 PROMO SPESIAL: Dapatkan diskon 20% untuk pemasangan plafond gypsum & PVC! Hubungi kami sekarang juga! 🔥 
-          ✨ Kualitas terbaik, harga terjangkau, pelayanan profesional ✨ 
-          📞 WhatsApp: +628977230266 📞
+          🔥 JASA PASANG PLAFON GYPSUM & PVC TANGERANG TERPERCAYA - Diskon 20% Bulan Ini! 🔥 
+          ⭐ Plafon Terdekat Berkualitas Premium | Tukang Berpengalaman 5+ Tahun | Garansi 2 Tahun ⭐ 
+          📞 WhatsApp: +628977230266 | Konsultasi & Survey GRATIS se-Jabodetabek 📞
         </div>
       </div>
 
@@ -24,12 +24,13 @@ const HeroSection = () => {
               <span className="block">KARYA ARCHITEAM</span>
             </h1>
             <h2 className="text-2xl md:text-6xl font-semibold mb-8">
-              <span className="block text-gradient">PLAFOND</span>
-              <span className="block text-gradient">GYPSUM & PVC</span>
+              <span className="block text-gradient">JASA PASANG PLAFON</span>
+              <span className="block text-gradient">GYPSUM & PVC TANGERANG</span>
             </h2>
             <p className="text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-              Jasa Pasang Plafon Gypsum & PVC Tangerang <br /> solusi terbaik untuk langit-langit rumah dan kantor Anda. 
-              Dengan kualitas premium dan desain modern yang elegan.
+              ⭐ Spesialis Plafon Gypsum & PVC Tangerang Terpercaya sejak 2019 <br />
+              🏠 500+ Project Selesai | 🎯 Konsultasi GRATIS | 📞 Fast Response <br />
+              Melayani: Plafon Rumah, Kantor, Ruko, Molding Dinding | Area Tangerang & Jakarta
             </p>
           </div>
 
