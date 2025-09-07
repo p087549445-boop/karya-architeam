@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 const ContactSection = () => {
   const handleMapClick = () => {
     // Open Google Maps with the specific shared link
-    const mapUrl = 'https://share.google/k5Rbj5KhuD30wWKgW';
+    const mapUrl = 'https://maps.app.goo.gl/niNFtjNTzW2ZtFps7';
     window.open(mapUrl, '_blank');
   };
 
