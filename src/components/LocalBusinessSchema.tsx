@@ -26,7 +26,16 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
       "latitude": -6.236197,
       "longitude": 106.531520
     },
-    "openingHours": "Mo-Sa 08:00-17:00, Su 08:00-12:00",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    ],
     "priceRange": "$$",
     "aggregateRating": {
       "@type": "AggregateRating",
@@ -34,9 +43,41 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
       "reviewCount": "127"
     },
     "areaServed": [
-      "Tangerang", "Tangerang Selatan", "Jakarta", "Depok", 
-      "Tigaraksa", "Cikupa", "Balaraja", "Jambe"
-    ]
+      "Tangerang",
+      "Tigaraksa",
+      "Cikupa",
+      "Balaraja",
+      "Jambe",
+      "Pasar Kemis",
+      "Citra Raya"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Layanan KARYA ARCHITEAM",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Jasa Pasang Plafon Gypsum"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Jasa Pasang Plafon PVC"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "serviceType": "Jasa Pemasangan Molding Dinding"
+          }
+        }
+      ]
+    }
   };
 
   return (
