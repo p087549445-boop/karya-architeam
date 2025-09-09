@@ -1,7 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
 import logoKarya from '@/assets/logo-karya-footer.png';
-import { versionInfo } from '@/utils/version';
 
 const Footer = () => {
   const handleWhatsAppClick = () => {
@@ -100,9 +99,9 @@ const Footer = () => {
                 © {new Date().getFullYear()} KARYA ARCHITEAM — All rights reserved.
               </p>
               <div className="flex items-center gap-4 text-white/60">
-                <span>Website Version: v{versionInfo.version}</span>
+                <span>Website Version: v2.1.1</span>
                 <span>|</span>
-                <span>Last Updated: {versionInfo.updateDate}</span>
+                <span>Last Updated: {new Date().toLocaleDateString('id-ID')}</span>
               </div>
             </div>
             
