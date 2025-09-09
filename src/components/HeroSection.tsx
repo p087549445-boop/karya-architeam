@@ -7,9 +7,9 @@ const HeroSection = () => {
       {/* Running Text Promo */}
       <div className="gradient-primary overflow-hidden whitespace-nowrap py-3">
         <div className="animate-marquee text-white font-semibold text-lg">
-          🔥 JASA PASANG PLAFON GYPSUM & PVC KABUPATEN TANGERANG TERPERCAYA 🔥 
-          ⭐ Plafon Terdekat Berkualitas Premium | Tukang Berpengalaman 5+ Tahun ⭐ 
-          📞 WhatsApp: +628977230266 | Konsultasi & Survey GRATIS se-Kabupaten Tangerang 📞
+          🔥 JASA PASANG PLAFON GYPSUM & PVC TANGERANG TERPERCAYA - Diskon 20% Bulan Ini! 🔥 
+          ⭐ Plafon Terdekat Berkualitas Premium | Tukang Berpengalaman 5+ Tahun | Garansi 2 Tahun ⭐ 
+          📞 WhatsApp: +628977230266 | Konsultasi & Survey GRATIS se-Jabodetabek 📞
         </div>
       </div>
 

@@ -17,8 +17,4 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  define: {
-    __BUILD_TIMESTAMP__: JSON.stringify(new Date().toISOString()),
-    __BUILD_VERSION__: JSON.stringify(`2.1.${Date.now() % 10000}`),
-  },
 }));

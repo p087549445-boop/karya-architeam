@@ -9,7 +9,7 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "KARYA ARCHITEAM",
-    "description": `Jasa Pasang Plafon Gypsum & PVC ${pageName} - Kabupaten Tangerang Terpercaya sejak 1 Januari 2019`,
+    "description": `Jasa Pasang Plafon Gypsum & PVC ${pageName} - Tangerang Terpercaya sejak 2019`,
     "url": "https://karya-architeam.my.id",
     "telephone": "+628977230266",
     "email": "awan@karya-architeam.my.id",
@@ -43,23 +43,13 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
       "reviewCount": "127"
     },
     "areaServed": [
-      "Pinang",
-      "Jambe", 
-      "Tenjo",
+      "Tangerang",
+      "Tigaraksa",
       "Cikupa",
       "Balaraja",
-      "Ps. Kemis",
-      "Sukamulya",
-      "Tigaraksa",
-      "Cimone",
-      "Karawaci",
-      "Kutruk", 
-      "Margasari",
-      "Cibadak",
-      "Sodong",
-      "Jatake",
-      "Kadu Agung",
-      "Bitung"
+      "Jambe",
+      "Pasar Kemis",
+      "Citra Raya"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",

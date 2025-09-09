@@ -59,8 +59,8 @@ const ProjectSection = () => {
             Portfolio Jasa Pasang Plafon Tangerang
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Terpercaya sejak 1 Januari 2019 dengan 500+ project plafon gypsum dan PVC selesai di area Kabupaten Tangerang. 
-            Kualitas terjamin dan harga bersaing. Konsultasi gratis!
+            Terpercaya sejak 2019 dengan 500+ project plafon gypsum dan PVC selesai di area Tangerang, Jakarta & sekitarnya. 
+            Kualitas terjamin, harga bersaing, garansi 2 tahun. Konsultasi gratis!
           </p>
         </div>
 
