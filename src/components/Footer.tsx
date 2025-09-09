@@ -31,9 +31,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
-              ⭐ Spesialis Jasa Pasang Plafon Gypsum & PVC Tangerang Terpercaya sejak 2019. 
-              Melayani area Tangerang, Jakarta, dan sekitarnya dengan kualitas premium, 
-              harga bersaing, dan garansi 2 tahun. Konsultasi & Survey GRATIS!
+              ⭐ Spesialis Jasa Pasang Plafon Gypsum & PVC Kabupaten Tangerang Terpercaya sejak 1 Januari 2019. 
+              Melayani area Pinang, Jambe, Tenjo, Cikupa, Balaraja, Ps. Kemis, Sukamulya, Tigaraksa, Cimone, Karawaci, Kutruk, Margasari, Cibadak, Sodong, Jatake, Kadu Agung, Bitung dan sekitarnya dengan kualitas premium dan harga bersaing. Konsultasi & Survey GRATIS!
             </p>
             
             {/* Contact Info */}
@@ -100,7 +99,7 @@ const Footer = () => {
                 © {new Date().getFullYear()} KARYA ARCHITEAM — All rights reserved.
               </p>
               <div className="flex items-center gap-4 text-white/60">
-                <span>Website Version: v2.1.0</span>
+                <span>Website Version: v2.1.1</span>
                 <span>|</span>
                 <span>Last Updated: {new Date().toLocaleDateString('id-ID')}</span>
               </div>
