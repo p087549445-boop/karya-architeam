@@ -46,7 +46,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('home')}
             />
             <h1 
-  className="text-xl md:text-2xl font-bold text-[#f4a300] text-center cursor-pointer hover:text-primary transition-colors duration-300"
+  className="text-xl md:text-2xl font-bold text-[#f4a300] cursor-pointer hover:text-primary transition-colors duration-300"
   onClick={() => scrollToSection('home')}
 >
   KARYA ARCHITEAM
