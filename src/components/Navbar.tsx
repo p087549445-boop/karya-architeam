@@ -37,14 +37,20 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
+          {/* Logo & Brand Name */}
+          <div className="flex-shrink-0 flex items-center space-x-3">
             <img 
               src={logoKarya} 
               alt="KARYA ARCHITEAM Logo" 
               className="h-10 w-auto object-contain cursor-pointer hover:scale-105 transition-transform duration-300"
               onClick={() => scrollToSection('home')}
             />
+            <h1 
+              className="text-xl md:text-2xl font-bold text-foreground cursor-pointer hover:text-primary transition-colors duration-300"
+              onClick={() => scrollToSection('home')}
+            >
+              KARYA ARCHITEAM
+            </h1>
           </div>
 
           {/* Desktop Menu */}
