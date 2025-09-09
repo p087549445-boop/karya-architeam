@@ -31,9 +31,9 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-white/80 mb-6 leading-relaxed max-w-md">
-              ⭐ Spesialis Jasa Pasang Plafon Gypsum & PVC Tangerang Terpercaya sejak 2019. 
-              Melayani area Tangerang, Jakarta, dan sekitarnya dengan kualitas premium, 
-              harga bersaing, dan garansi 2 tahun. Konsultasi & Survey GRATIS!
+              ⭐ Spesialis Jasa Pasang Plafon Gypsum & PVC Kabupaten Tangerang Terpercaya sejak 1 Januari 2019. 
+              Melayani area Kabupaten Tangerang dan sekitarnya dengan kualitas premium. 
+              Konsultasi & Survey GRATIS!
             </p>
             
             {/* Contact Info */}
@@ -100,9 +100,9 @@ const Footer = () => {
                 © {new Date().getFullYear()} KARYA ARCHITEAM — All rights reserved.
               </p>
               <div className="flex items-center gap-4 text-white/60">
-                <span>Website Version: v2.1.0</span>
+                <span>Website Version: {import.meta.env.VITE_APP_VERSION || 'v2.1.0'}</span>
                 <span>|</span>
-                <span>Last Updated: {new Date().toLocaleDateString('id-ID')}</span>
+                <span>Last Updated: {import.meta.env.VITE_BUILD_DATE || new Date().toLocaleDateString('id-ID')}</span>
               </div>
             </div>
             
