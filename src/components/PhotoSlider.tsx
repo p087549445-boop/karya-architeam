@@ -79,20 +79,29 @@ const PhotoSlider = () => {
           onTouchStart={isMobile ? handleTouchStart : undefined}
           onClick={() => handleImageClick(slides[currentSlide].image)}
         >
-          {/* Image */}
-          <div className="relative w-full h-full">
-            <img
-              src={slides[currentSlide].image}
-              alt={slides[currentSlide].title}
-              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-          </div>
-
-          {/* Content Overlay */}
-          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-            <h3 className="text-2xl font-bold mb-2">{slides[currentSlide].title}</h3>
-            <p className="text-lg opacity-90">{slides[currentSlide].description}</p>
+          {/* Images Container with Sliding Animation */}
+          <div 
+            className="flex h-full transition-transform duration-700 ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+          >
+            {slides.map((slide, index) => (
+              <div key={index} className="relative w-full h-full flex-shrink-0">
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                
+                {/* Content Overlay - Only show for current slide */}
+                {index === currentSlide && (
+                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                    <h3 className="text-2xl font-bold mb-2">{slide.title}</h3>
+                    <p className="text-lg opacity-90">{slide.description}</p>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
 
           {/* Navigation Buttons - Hidden on Mobile */}
