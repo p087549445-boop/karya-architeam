@@ -32,7 +32,7 @@ const FloatingButtons = () => {
     <>
       {/* Scroll to Top Button - Right Side */}
       {showScrollTop && (
-        <div className="fixed right-6 bottom-6 md:bottom-15 z-50">
+        <div className="fixed right-6 bottom-6 md:bottom-11 z-50">
           <Button
             onClick={scrollToTop}
             className="w-14 h-14 rounded-full gradient-primary text-white shadow-2xl hover:scale-110 transition-all duration-300 group"
