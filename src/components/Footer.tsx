@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Facebook, Instagram, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram, Video } from 'lucide-react';
 import logoKarya from '@/assets/logo-karya-footer.png';
 
 const Footer = () => {
@@ -108,14 +108,11 @@ const Footer = () => {
             
             {/* Social Media */}
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/karyaarchiteam" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="Facebook KARYA ARCHITEAM">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="https://www.instagram.com/karyaarchiteam" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="Instagram KARYA ARCHITEAM">
+              <a href="https://www.instagram.com/karya_architeam/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="Instagram KARYA ARCHITEAM">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="https://www.tiktok.com/@plafonpvctangerang" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="TikTok Plafon PVC Tangerang">
-                <Youtube className="h-6 w-6" />
+              <a href="https://www.tiktok.com/@plafonpvctangerang/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="TikTok Plafon PVC Tangerang">
+                <Video className="h-6 w-6" />
               </a>
             </div>
           </div>
