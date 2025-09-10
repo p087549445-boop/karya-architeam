@@ -10,6 +10,8 @@ const PhotoSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string>('');
+  const [dragOffset, setDragOffset] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
   const isMobile = useIsMobile();
 
   const slides = [
@@ -44,11 +46,30 @@ const PhotoSlider = () => {
   };
 
   const handleTouchStart = (e: React.TouchEvent) => {
+    if (!isMobile) return;
+    
     const touchStartX = e.touches[0].clientX;
+    setIsDragging(true);
+    
+    const handleTouchMove = (e: TouchEvent) => {
+      const touchCurrentX = e.touches[0].clientX;
+      const diff = touchStartX - touchCurrentX;
+      const containerWidth = 400; // Approximate container width
+      const dragPercentage = (diff / containerWidth) * 100;
+      
+      // Limit drag to reasonable bounds
+      const maxDrag = 50;
+      const limitedDrag = Math.max(-maxDrag, Math.min(maxDrag, dragPercentage));
+      
+      setDragOffset(limitedDrag);
+    };
     
     const handleTouchEnd = (e: TouchEvent) => {
       const touchEndX = e.changedTouches[0].clientX;
       const diff = touchStartX - touchEndX;
+      
+      setIsDragging(false);
+      setDragOffset(0);
       
       if (Math.abs(diff) > 50) {
         if (diff > 0) {
@@ -58,9 +79,11 @@ const PhotoSlider = () => {
         }
       }
       
+      document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('touchend', handleTouchEnd);
     };
     
+    document.addEventListener('touchmove', handleTouchMove);
     document.addEventListener('touchend', handleTouchEnd);
   };
 
@@ -81,8 +104,8 @@ const PhotoSlider = () => {
         >
           {/* Images Container with Sliding Animation */}
           <div 
-            className="flex h-full transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            className={`flex h-full ${isDragging ? '' : 'transition-transform duration-700 ease-in-out'}`}
+            style={{ transform: `translateX(-${currentSlide * 100 + dragOffset}%)` }}
           >
             {slides.map((slide, index) => (
               <div key={index} className="relative w-full h-full flex-shrink-0">
