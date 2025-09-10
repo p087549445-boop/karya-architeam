@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Instagram, Video } from 'lucide-react';
+import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import logoKarya from '@/assets/logo-karya-footer.png';
 
 const Footer = () => {
@@ -112,7 +112,9 @@ const Footer = () => {
                 <Instagram className="h-6 w-6" />
               </a>
               <a href="https://www.tiktok.com/@plafonpvctangerang/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300" aria-label="TikTok Plafon PVC Tangerang">
-                <Video className="h-6 w-6" />
+                <svg className="h-6 w-6 opacity-60 hover:opacity-100 transition-opacity duration-300 fill-current" viewBox="0 0 24 24">
+                  <path d="M19.321 5.562a5.124 5.124 0 01-.443-.258 6.228 6.228 0 01-1.137-.966c-.849-.93-1.363-2.151-1.405-3.338h-3.548v13.043c0 .748-.31 1.463-.863 1.986a2.91 2.91 0 01-2.107.863c-1.608 0-2.914-1.306-2.914-2.914 0-1.607 1.306-2.913 2.914-2.913.151 0 .3.012.446.034v-3.6a6.505 6.505 0 00-.446-.016c-3.588 0-6.507 2.918-6.507 6.506 0 3.588 2.919 6.507 6.507 6.507 3.588 0 6.506-2.919 6.506-6.507V8.798a9.85 9.85 0 005.597 1.746v-3.593a5.875 5.875 0 01-2.0-.389z"/>
+                </svg>
               </a>
             </div>
           </div>
