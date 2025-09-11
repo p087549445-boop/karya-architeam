@@ -7,7 +7,6 @@ const TestimonialSection = () => {
   const testimonials = [
     {
       name: 'Budi Santoso',
-      role: 'Pemilik Rumah',
       location: 'Jakarta Selatan',
       rating: 5,
       text: 'Pelayanan KARYA ARCHITEAM sangat memuaskan! Desain arsitektur dan konstruksi yang dipasang di rumah saya sangat rapi dan berkualitas. Tim kerja profesional dan tepat waktu.',
@@ -15,7 +14,6 @@ const TestimonialSection = () => {
     },
     {
       name: 'Sari Dewi',
-      role: 'Interior Designer',
       location: 'Bekasi',
       rating: 5,
       text: 'Sudah beberapa kali bekerja sama dengan KARYA ARCHITEAM untuk project klien. Hasil selalu memuaskan dan sesuai dengan desain yang diinginkan. Highly recommended!',
@@ -23,7 +21,6 @@ const TestimonialSection = () => {
     },
     {
       name: 'Ahmad Rahman',
-      role: 'Pengusaha',
       location: 'Tangerang',
       rating: 5,
       text: 'Konstruksi dan renovasi di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan pelayanan yang memuaskan. Terima kasih KARYA ARCHITEAM!',
@@ -31,7 +28,6 @@ const TestimonialSection = () => {
     },
     {
       name: 'Linda Permata',
-      role: 'Arsitek',
       location: 'Depok',
       rating: 5,
       text: 'KARYA ARCHITEAM adalah partner terpercaya untuk project konstruksi. Kualitas material bagus, pengerjaan rapi, dan komunikasi yang baik selama project berlangsung.',
@@ -88,9 +84,6 @@ const TestimonialSection = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   {testimonials[currentTestimonial].name}
                 </h3>
-                <p className="text-muted-foreground mb-1">
-                  {testimonials[currentTestimonial].role}
-                </p>
                 <p className="text-sm text-muted-foreground mb-4">
                   📍 {testimonials[currentTestimonial].location}
                 </p>
