@@ -35,14 +35,14 @@
       "short_name": "Gallery",
       "description": "Lihat galeri hasil kerja arsitektur",
       "url": "/gallery",
-      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
     },
     {
       "name": "Kontak",
       "short_name": "Kontak", 
       "description": "Hubungi KARYA ARCHITEAM via WhatsApp",
       "url": "/contact",
-      "icons": [{ "src": "/logo-karya-navbar.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/favicon.ico", "sizes": "192x192" }]
     }
   ]
 }
