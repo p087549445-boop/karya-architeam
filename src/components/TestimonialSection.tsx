@@ -3,6 +3,8 @@ import { Star, Quote } from 'lucide-react';
 
 const TestimonialSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
 
   const testimonials = [
     {
@@ -38,9 +40,37 @@ const TestimonialSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
-    }, 5000);
+    }, 8000); // Increased from 5000ms to 8000ms
     return () => clearInterval(interval);
   }, [testimonials.length]);
+
+  // Touch handlers for swipe functionality
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchEnd(0); // Reset touchEnd
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      // Swipe left - next testimonial
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }
+
+    if (isRightSwipe) {
+      // Swipe right - previous testimonial
+      setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    }
+  };
 
   const renderStars = (rating: number) => {
     return Array.from({ length: 5 }, (_, i) => (
@@ -69,7 +99,12 @@ const TestimonialSection = () => {
 
         {/* Testimonial Carousel */}
         <div className="relative max-w-4xl mx-auto">
-          <div className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 relative overflow-hidden">
+          <div 
+            className="bg-white rounded-3xl shadow-2xl p-8 md:p-12 relative overflow-hidden"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+          >
             {/* Quote Icon */}
             <div className="absolute top-6 left-6 opacity-10">
               <Quote className="h-16 w-16 text-primary" />
