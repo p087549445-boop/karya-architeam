@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Git hook to increment version on each commit
+# This ensures version updates on both Lovable and GitHub edits
+
+echo "🔄 Incrementing version..."
+node scripts/increment-version.js
+
+# Add the updated version file to the commit
+git add src/version.json
+
+echo "✅ Version incremented and staged"
