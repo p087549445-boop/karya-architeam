@@ -20,10 +20,10 @@ const HeroSection = () => {
         <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
           {/* Header Text */}
           <div className="mb-12">
-            <h2 className="text-3xl md:text-7xl font-bold mb-8 leading-tight">
+            <h1 className="text-3xl md:text-7xl font-bold mb-8 leading-tight">
               <span className="block text-gradient">JASA PASANG PLAFON</span>
               <span className="block text-gradient">GYPSUM & PVC TANGERANG</span>
-            </h2>
+            </h1>
             <p className="text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
               ⭐ Spesialis Plafon Gypsum & PVC Kabupaten Tangerang Terpercaya sejak 1 Januari 2019 <br />
               🏠 500+ Project Selesai | 🎯 Konsultasi GRATIS | 📞 Fast Response <br />
