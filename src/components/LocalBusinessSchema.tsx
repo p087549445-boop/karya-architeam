@@ -15,8 +15,8 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
     "email": "awan@karya-architeam.my.id",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Jl.raya sukamanah No.12, RT.002/RW.001 desa, Suka Manah, Kec. Jambe, Kabupaten Tangerang, Banten 15720",
-      "addressLocality": "Kec. Jambe, Kabupaten Tangerang",
+      "streetAddress": "Jl.raya parung jahe desa, Suka Manah, Kec. Jambe",
+      "addressLocality": "Kabupaten Tangerang",
       "addressRegion": "Banten",
       "postalCode": "15720",
       "addressCountry": "ID"
@@ -26,16 +26,14 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
       "latitude": -6.236197,
       "longitude": 106.531520
     },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
-        ],
-        "opens": "00:00",
-        "closes": "23:59"
-      }
-    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "24:00"
+    },
     "priceRange": "$$",
     "aggregateRating": {
       "@type": "AggregateRating",
