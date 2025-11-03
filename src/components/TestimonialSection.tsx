@@ -8,32 +8,11 @@ const TestimonialSection = () => {
 
   const testimonials = [
     {
-      name: 'Budi Santoso',
-      location: 'Jakarta Selatan',
+      name: 'Contoh Testimoni',
+      location: 'Kabupaten Tangerang',
       rating: 5,
-      text: 'Pelayanan KARYA ARCHITEAM sangat memuaskan! Desain arsitektur dan konstruksi yang dipasang di rumah saya sangat rapi dan berkualitas. Tim kerja profesional dan tepat waktu.',
-      image: '👨‍💼'
-    },
-    {
-      name: 'Sari Dewi',
-      location: 'Bekasi',
-      rating: 5,
-      text: 'Sudah beberapa kali bekerja sama dengan KARYA ARCHITEAM untuk project klien. Hasil selalu memuaskan dan sesuai dengan desain yang diinginkan. Highly recommended!',
-      image: '👩‍💻'
-    },
-    {
-      name: 'Ahmad Rahman',
-      location: 'Tangerang',
-      rating: 5,
-      text: 'Konstruksi dan renovasi di kantor saya sangat bagus. Harga kompetitif, kualitas premium, dan pelayanan yang memuaskan. Terima kasih KARYA ARCHITEAM!',
-      image: '👨‍💼'
-    },
-    {
-      name: 'Linda Permata',
-      location: 'Depok',
-      rating: 5,
-      text: 'KARYA ARCHITEAM adalah partner terpercaya untuk project konstruksi. Kualitas material bagus, pengerjaan rapi, dan komunikasi yang baik selama project berlangsung.',
-      image: '👩‍🏗️'
+      text: 'Kami berkomitmen memberikan pelayanan terbaik untuk setiap project pemasangan plafon. Kepuasan klien adalah prioritas utama kami.',
+      image: '⭐'
     }
   ];
 
@@ -89,11 +68,11 @@ const TestimonialSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-2xl md:text-5xl font-bold text-gradient mb-4">
-            Reviews Klien
+            Komitmen Kami
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Kepuasan klien adalah prioritas utama kami. Berikut adalah testimoni 
-            dari klien yang telah mempercayakan project plafond kepada kami
+            Kepuasan klien adalah prioritas utama kami. Kami berkomitmen memberikan 
+            layanan terbaik untuk setiap project pemasangan plafon Anda
           </p>
         </div>
 

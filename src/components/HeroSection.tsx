@@ -25,8 +25,8 @@ const HeroSection = () => {
               <span className="block text-gradient">GYPSUM & PVC TANGERANG</span>
             </h1>
             <p className="text-lg md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
-              ⭐ Spesialis Plafon Gypsum & PVC Kabupaten Tangerang Terpercaya sejak 1 Januari 2019 <br />
-              🏠 500+ Project Selesai | 🎯 Konsultasi GRATIS | 📞 Fast Response <br />
+              ⭐ Spesialis Plafon Gypsum & PVC Kabupaten Tangerang sejak 1 Januari 2019 <br />
+              🏠 Berpengalaman | 🎯 Konsultasi GRATIS | 📞 Fast Response <br />
               Melayani: Plafon Rumah, Kantor, Ruko, Molding Dinding | Area Kabupaten Tangerang
             </p>
           </div>

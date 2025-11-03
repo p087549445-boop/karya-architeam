@@ -5,48 +5,48 @@ const ProjectSection = () => {
   const stats = [
     {
       icon: CheckCircle,
-      number: '500+',
-      label: 'Project Selesai',
+      number: '6+',
+      label: 'Tahun Beroperasi',
       color: 'text-primary'
     },
     {
       icon: Clock,
-      number: '5+',
-      label: 'Tahun Pengalaman',
+      number: '24/7',
+      label: 'Layanan Konsultasi',
       color: 'text-secondary'
     },
     {
       icon: Users,
-      number: '1000+',
-      label: 'Klien Puas',
+      number: '100%',
+      label: 'Fokus Kualitas',
       color: 'text-accent'
     },
     {
       icon: Star,
-      number: '4.9',
-      label: 'Rating Kepuasan',
+      number: '2019',
+      label: 'Berdiri Sejak',
       color: 'text-primary'
     }
   ];
 
   const projects = [
     {
-      title: 'Rumah Tinggal Mewah',
-      description: 'Pemasangan plafond gypsum dengan desain modern dan pencahayaan LED tersembunyi.',
+      title: 'Plafon Gypsum',
+      description: 'Pemasangan plafond gypsum berkualitas dengan berbagai pilihan desain modern sesuai kebutuhan.',
       category: 'Residential',
-      area: '200m²'
+      area: 'Custom'
     },
     {
-      title: 'Kantor Corporate',
-      description: 'Plafond PVC premium untuk ruang kantor dengan sistem akustik terbaik.',
+      title: 'Plafon PVC',
+      description: 'Plafond PVC tahan lama, anti rayap, dan tahan air cocok untuk berbagai jenis ruangan.',
       category: 'Commercial',
-      area: '500m²'
+      area: 'Custom'
     },
     {
-      title: 'Hotel Bintang 5',
-      description: 'Desain plafond gypsum mewah untuk lobby dan suite room hotel premium.',
-      category: 'Hospitality',
-      area: '1000m²'
+      title: 'Molding Dinding',
+      description: 'Pemasangan molding dinding untuk mempercantik interior ruangan Anda dengan hasil rapi.',
+      category: 'Interior',
+      area: 'Custom'
     }
   ];
 
@@ -59,7 +59,7 @@ const ProjectSection = () => {
             Portfolio Jasa Pasang Plafon Tangerang
           </h2>
           <p className="text-lg text-white/90 max-w-3xl mx-auto">
-            Terpercaya sejak 1 Januari 2019 dengan 500+ project plafon gypsum dan PVC selesai di area Kabupaten Tangerang. 
+            Melayani jasa pasang plafon gypsum dan PVC di area Kabupaten Tangerang sejak 1 Januari 2019. 
             Kualitas terjamin dengan tim berpengalaman. Konsultasi gratis!
           </p>
         </div>
