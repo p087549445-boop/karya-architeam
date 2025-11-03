@@ -35,11 +35,6 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({ pageName = "H
       "closes": "24:00"
     },
     "priceRange": "$$",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "127"
-    },
     "areaServed": [
       "Pinang",
       "Jambe", 
