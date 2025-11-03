@@ -6,9 +6,6 @@ Sitemap: https://karya-architeam.my.id/sitemap.xml
 
 # Allow all pages to be crawled
 Allow: /
-Allow: /#gallery
-Allow: /#project
-Allow: /#contact
 
 # Prevent crawling of unnecessary files
 Disallow: /src/
